@@ -1,0 +1,16 @@
+.eventItem {
+  height: 700px;
+  overflow: hidden;
+}
+
+.thumbnail {
+  margin: 0 auto;
+}
+
+#operationBar {
+  padding: 15px 0;
+}
+
+#subTitle {
+  margin-bottom: 20px;
+}
