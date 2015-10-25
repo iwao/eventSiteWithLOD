@@ -6,8 +6,6 @@ require 'sinatra'
 require 'net/http'
 require 'uri'
 
-logger = Logger.new('sinatra.log')
-
 get '/' do
   send_file File.join(settings.public_folder, 'index.html')
 end
