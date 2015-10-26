@@ -5,16 +5,6 @@
 //Iwao KOBAYASHI
 //2015年11月5日
 
-▼シナリオ
-１．LODとは？
-２．SPARQLとは？
-３．ヨコハマ・アート・LODとは？
-４．データを取得してみよう（ブラウザから）
-５．環境構築
-６．javascriptを使ってイベントデータを取得
-７．必要な属性を取り出してみよう
-８．ドロップダウンを設置して月を切り替えできるようにしてみる
-９．見た目を調整してみよう（文字数制限したり、画像サイズ調整したり、センタリングしたり）
 */
 
 //SPARQLエンドポイント設定
@@ -45,7 +35,6 @@ var eventTable = function(data){
 
 //イベント紹介文字数制限
 var cutDown = function(description,limitNum){
-  //var limitNum = '150';
   var followChar = ' …';
   var description = description.toString();
   var textLength = description.length;
@@ -60,7 +49,7 @@ var cutDown = function(description,limitNum){
 //ドロップダウンで月を指定
 $("select[name=month]").change(function(){
   //alert($("select[name=month]").val());
-  month = $("select[name=month]").val();
+  var month = $("select[name=month]").val();
   //イベント再表示
   //表示をリセット
   $(".eventItem").remove();
@@ -74,15 +63,12 @@ var getEvents = function(month){
   var query = [
     "PREFIX yav: <http://yafjp.org/terms/yav/1.0#>",
     "PREFIX cal: <http://www.w3.org/2002/12/cal/icaltzd#>",
-    "PREFIX dct: <http://purl.org/dc/terms/>",
     "PREFIX schema: <http://schema.org/>",
-    "PREFIX jrrk: <http://purl.org/jrrk#>",
 
     "SELECT distinct * ",
     "where {",
     "?s a yav:Event ;",
     "rdfs:label ?label ;",
-    "schema:location [ jrrk:address ?address ] ;",
     "schema:location [ rdfs:label ?location ] ;",
     "schema:image ?image ;",
     "schema:description ?description ;",
