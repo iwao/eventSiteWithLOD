@@ -1,0 +1,2033 @@
+d": {
+		"link": [],
+		"vars": [
+			"s",
+			"label",
+			"address",
+			"description",
+			"start",
+			"end"
+		]
+	},
+	"results": {
+		"distinct": false,
+		"ordered": true,
+		"bindings": [
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://ycag.yafjp.org/event/29954"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "安藤華舟 個展"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市中区吉田町5-1"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "水墨・墨彩画　約30点"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-10-27T00:00:00Z"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-01T00:00:00Z"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://ycag.yafjp.org/event/29964"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "ル ヴァン展"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市中区吉田町4-1"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "油彩・水彩・アクリル・鉛筆画等　講師：香取玲子"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-10-26T00:00:00Z"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-01T00:00:00Z"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://ycag.yafjp.org/event/29727"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "絵彩の会展"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市中区翁町1-3 小原ビル2F"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "油彩、水彩"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-10-26T00:00:00Z"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-01T00:00:00Z"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://ycag.yafjp.org/event/29681"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "五島三子男展"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市中区石川町1-6 三甚ビル3F"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "平面・インスタレーション　10点"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-10-20T00:00:00Z"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-01T00:00:00Z"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://ycag.yafjp.org/event/30001"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "中筋青輝 還暦書作展"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市西区みなとみらい2-3-5 クイーンズスクエア横浜2F"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "書道"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-10-28T00:00:00Z"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-01T00:00:00Z"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://ycag.yafjp.org/event/29846"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "上原収二展"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市中区吉田町71 リーブビル1F"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "水彩画・油彩画"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-10-26T00:00:00Z"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-01T00:00:00Z"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://artazamino.jp/event/hafjkfhasdhfasdfksahfaklsdhfajsfafsdkfhksjadhfuiavyxcasfd"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "あざみ野カレッジ　11月"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市青葉区あざみ野南1-17-3 アートフォーラムあざみ野内"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "この投稿はパスワードで保護されているため抜粋文はありません。"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-02T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-02T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://yan.yafjp.org/event/event_33663"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "トール＆クラフト　ベリーズCafe"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市戸塚区戸塚町16-17"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "四季折々のトールペイント作品の展示。他にクラフト作品の販売。"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-10-28T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-02T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://yan.yafjp.org/event/event_33598"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "秋の夜長のみなとみらいクラシック・コンサート"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市西区みなとみらい2-3-6"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "〈曲〉【オール・ブラームス・プログラム】F.A.Eソナタよりスケルツォ、他"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-02T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-02T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://yan.yafjp.org/event/event_33861"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "泰地虔郎とYOKOHAMA Port Beats　vo.キャロル山崎"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市中区住吉町4-42-1"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜をイメージした曲を数多く演奏していますが、その中でも馬車道のテーマミュージック「ＧAｓｌｉｇｈｔ　in　the　Twilight」そして「YOKOHAMA　Boogie」またスタジアムをイメージした「Swingin　StADium」そして昨年は「馬車道讃歌」も発表されました。また、県立氷取沢高校のJAZZ部の指導など幅広く活躍している、泰知虔郎とYOKOHAMA　Port BeAtsによるコンサート。すべての曲がオリジナルの編曲、そしてオリジナル曲も含めて演奏します。今回はボーカルにキャロル山崎を迎えてのステージです。"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-02T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-02T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://yan.yafjp.org/event/event_33167"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "BankART school 2015 横浜建築家列伝 vol.2 五十嵐太郎+磯達雄"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市中区海岸通3-9"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "〈開催日〉9/7,14,28,10/5,12,19,26,11/2(計8回月曜日)〈内容〉先進的な都市空間であり続ける横浜が、どんな建築家によって築かれてきたのか、その歴史と将来を考えるインタビュー・シリーズの第2弾です。〈申込方法〉受講したい講座名、名前、住所、電話番号、メールアドレスをメール、FAX、電話のいずれかにてお知らせください。先着順。"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-09-07T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-02T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://yan.yafjp.org/event/event_33541"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "あざみ野カレッジ　米づくりから始まる　日本酒の物語"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市青葉区あざみ野南1-17-3 アートフォーラムあざみ野内"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "日本独自の食文化として古くから親しまれてきた日本酒。2014年は輸出量が過去最高となるなど、海外からも注目が集まっています。日本酒の原料といえばお米。神奈川県海老名市とその周辺で、お米の栽培からのお酒づくりに携わる泉橋酒造から橋場友一さんをお招きして、田んぼと苗から日本酒ができるまでについて、お話をうかがいます。また、お酒のつくり手（蔵元）ごとの個性が光るのも日本酒の魅力のひとつ。泉橋酒造では、お米と水以外の原料を使用しない純米酒のみを製造していることをはじめ、講座では蔵元ならではのお話も。今回は実際に日本酒の試飲も交えながら、大人の愉しみが生まれる舞台裏を学びます。〈講師〉橋場友一(泉橋酒造代表)〈対象〉20歳以上の方　※本講座では少量の日本酒を提供するため、未成年の方のご参加及びお車でご来場される方はご参加いただけません。〈申込方法〉講座名、名前(ふりがな)、住所、年齢、電話・FAX番号を明記の上、往復はがき、HP、直接来館のいずれかで申込。〈応募締切〉10月19日(月)必着※締切後定員に満たない場合は先着順でホームページ・電話・直接来館で受付。"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-02T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-02T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://yan.yafjp.org/event/event_33906"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "第130回yokohamaうたおう会"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市鶴見区鶴見中央1-31-2"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "大好きな歌を、皆んなでうたえば怖くない。心豊かなひとときを！"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-02T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-02T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://yan.yafjp.org/event/event_33429"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "写友ぐる～ぷ“翼” 20周年記念写真展"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市神奈川区東神奈川1-10-1"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "二科会 片岡先生の指導で20年目を迎える、市の写真教室修了生を母体にしたグループ。「光と影」をテーマとした課題作品と、自由作品の発表展示。"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-10-27T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-02T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://yan.yafjp.org/event/event_33430"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "彩友会・恵友会 合同水彩画作品展"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市神奈川区東神奈川1-10-1"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "堀恵子先生指導による2つの水彩画同好会の、会員20余名が描いた風景や静物等の作品約45点を展示。"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-10-27T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-02T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://yan.yafjp.org/event/event_33650"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "フォト亀楽　第35回　写真展"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市中区寿町1-4"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "アマチュア写真クラブの展示会。木村先生、藤代先生指導の平均年齢78歳の会員、30名の作品を展示。今年で35回目になる。"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-10-27T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-02T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://yan.yafjp.org/event/event_33988"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "第163回　横浜にぎわい座有名会②"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市中区野毛町3-110-1"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": ""
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-02T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-02T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://ycag.yafjp.org/event/29980"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "坪井富佐乃銅版画展"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市中区山下町112-5 日絹パークビル1F"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "クジラやシャチなど海の生物をモチーフにした銅版画"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-10-28T00:00:00Z"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-02T00:00:00Z"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://ycag.yafjp.org/event/30000"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "サロンデザール絵画教室 横浜展"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市西区みなとみらい2-3-5 クイーンズスクエア横浜2F"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "絵画"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-10-28T00:00:00Z"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-02T00:00:00Z"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://ycag.yafjp.org/event/29999"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "第１３回 ぱーしもんキルト展"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市西区みなとみらい2-3-5 クイーンズスクエア横浜2F"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "パッチワークキルト"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-10-27T00:00:00Z"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-02T00:00:00Z"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://yan.yafjp.org/event/event_33948"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "21世紀の『上を向いて歩こう』Young person’s guide to ‘Hachidai-san’"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市中区山下町281"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "ジャズも、ロックも、昭和歌謡にJーPOPも、原点にして最先端。中村八大って、どんな人？　ジャンルと世代を超えてKAATがお届けする、音楽の実験室。"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-03T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-03T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://yan.yafjp.org/event/event_33937"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜キネマ倶楽部 第41回上映会 『ぼくたちの家族』"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市西区岡野1丁目6-41"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "映画の上映会です。「舟を編む」が数々の映画賞を受賞し、アカデミー外国語映画賞日本代表作品にも選出された石井裕也監督が母親の病気をきっかけに、様々な問題に直面した家族が再び一つになっていく姿を描く。長男の浩介に妻夫木聡、その弟の俊平に池松壮亮、両親を原田美枝子、長塚京三が演じる。原作は早見和真の同名小説。"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-03T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-03T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://yan.yafjp.org/event/event_33599"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "イルジー・ビエロフラーヴェク指揮 チェコ・フィルハーモニー管弦楽団"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市西区みなとみらい2-3-6"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "ドヴォルザークの母国、チェコ最高のオーケストラが、同郷の指揮者と奏でる最高の「新世界より」。庄司紗矢香による、メンデルスゾーンのヴァイオリン協奏曲も、どちらも期待値∞！〈曲〉スメタナ：シャールカ ～連作交響詩「わが祖国」より、メンデルスゾーン：ヴァイオリン協奏曲 op.64(ヴァイオリン：庄司紗矢香）、ドヴォルザーク：交響曲第9番「新世界より」op.95"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-03T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-03T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://yan.yafjp.org/event/event_33600"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "Collegium Cantorum YOKOHAMA 第10回定期演奏会"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市西区みなとみらい2-3-6"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "〈曲〉松下耕：悔悛と歓喜 四旬節と復活祭への4つのモテット、松下耕：無伴奏混声合唱のためのゆめおり"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-03T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-03T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://yan.yafjp.org/event/event_34030"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜翠嵐OBOG吹奏楽団　第8回定期演奏会"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市西区紅葉ヶ丘9-2"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": ""
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-03T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-03T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://yan.yafjp.org/event/event_33862"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "パンポップパラダイスのワクワクLIVE&amp;amp;スティールパン体験"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市中区住吉町4-42-1"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "世界で一番癒しの音といわれているスティールパン。そのスティールパンを使って、みんなが知っているカバー曲から楽しいオリジナル曲まで色んな曲をやるよ！終演後はロビーでスティールパンを体験できるよ！"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-03T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-03T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://yan.yafjp.org/event/event_33863"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "親子で楽しむ　手づくりトランペット"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市中区住吉町4-42-1"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "親子で楽しめる身近な素材を使った手づくり楽器のワークショップ。びにーつ製のホースやクリアシートで、自分だけのトランペットをつくろう！完成したら、プロと一緒に、アンサンブル演奏♪本物のトランペットも体験できるよ！"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-03T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-03T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://yan.yafjp.org/event/event_33864"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "親子でチャレンジ手つくり「新聞紙バッグ」"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市中区住吉町4-42-1"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "読み終えた新聞紙を折って、てんぷんのりで貼るだけ！自分だめのオリジナルバッグをつくっちゃおう！"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-03T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-03T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://yan.yafjp.org/event/event_33865"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "親子でチャレンジ手づくり「レインスティック」"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市中区住吉町4-42-1"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "雨乞いの儀式で使われていたといわれる「レインスティック」身の回りのものをつかって雨の効果音が出せるレインスティックを作っちゃおう！雨の音がきこえるかな？"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-03T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-03T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://yan.yafjp.org/event/event_33866"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "親子で楽しむお箏のワークショップ"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市中区住吉町4-42-1"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "日本の伝統楽器の一つ、箏。龍の体に見立てられた胴に張られた弦は“琴線”に触れる音。親子でご一緒に、自分の手で奏でてみませんか。"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-03T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-03T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://yan.yafjp.org/event/event_33867"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "親子で学ぶピアノの仕組み"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市中区住吉町4-42-1"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "ピアノってどうやって音が鳴るの？いろいろな種類があるんだね。どこが違うんだろうｚ？いっそのこと解体しちゃいましょう！プチ調律体験や、ピアニストによる模範演奏のほか、昔の鍵盤楽器「チェンバロ」の展示もあるよ！"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-03T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-03T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://yan.yafjp.org/event/event_33351"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "第35回悠画会展"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市磯子区杉田1-1-1"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "洋画・日本画"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-10-28T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-03T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://yan.yafjp.org/event/event_33907"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "第12回　白井ピアノレッスンルームコンサート"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市鶴見区鶴見中央1-31-2"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "第12回白井ピアノレッスンルーム、鶴見、上大岡合同発表会"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-03T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-03T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://yan.yafjp.org/event/event_33891"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "ピアノ発表会"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市戸塚区戸塚町16-17"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "幼稚園児から大人の生徒さんの演奏。～ピアノ・連弾・歌など～"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-03T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-03T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://yan.yafjp.org/event/event_33989"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "第163回　横浜にぎわい座有名会③"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市中区野毛町3-110-1"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": ""
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-03T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-03T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://ycag.yafjp.org/event/29557"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "笹倉貫聖アクリル画展"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市西区高島2-18-1 横浜新都市ビル（そごう）9F"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "現代に忘れ去られがちな夢とユーモアをあなたに"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-10-28T00:00:00Z"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-03T00:00:00Z"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://ycag.yafjp.org/event/29558"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "高宮あけみ水彩画展"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市西区高島2-18-1 横浜新都市ビル（そごう）9F"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "身近な風景、静物、花等をさりげなく"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-10-28T00:00:00Z"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-03T00:00:00Z"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://ycag.yafjp.org/event/30026"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "第29回　港の作家小品展"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市中区桜木町1-1 ぴおシティ6F"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "港の作家美術協会 会員90名による油彩画、日本画、アクリル画、10号以下の小品絵画展"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-10-28T00:00:00Z"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-03T00:00:00Z"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://ycag.yafjp.org/event/29924"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "第11回　アートクラブオリオン絵画展"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市中区山手町234-1"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "絵画"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-10-29T00:00:00Z"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-03T00:00:00Z"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://ycag.yafjp.org/event/29972"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "小澤一正展"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市西区南幸1-6-31 7階"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "洋画"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-10-28T00:00:00Z"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-03T00:00:00Z"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://ycag.yafjp.org/event/29973"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "ー季趣景勝ー　浅野　忠　展"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市西区南幸1-6-31 7階"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "日本画"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-10-28T00:00:00Z"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-03T00:00:00Z"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://ycag.yafjp.org/event/29977"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "第35回 横浜能面展"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市中区常盤町4-45 アートビル7F"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "主催＝面の会・岩崎久人"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-10-29T00:00:00Z"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-03T00:00:00Z"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://ycag.yafjp.org/event/29984"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "山本真郎　陶展"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市中区山手町100 サンセット山手1F"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "陶で制作した灯と土鍋など"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-10-29T00:00:00Z"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-03T00:00:00Z"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://ycag.yafjp.org/event/29708"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "黒騎士展・秋（第9回）"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市中区山下町214 TAO（道）ビル2F"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "安斎あや子　永田晶彦　星野鐡之　鈴木正道　野田洋介　杉村倉太　能登茂行　山本治美"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-10-24T00:00:00Z"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-03T00:00:00Z"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://yan.yafjp.org/event/event_33733"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "第32回　港南区ART展"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市港南区上大岡西1-6-1"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "港南区民文化祭(11月3日)に併せ、地域住民の創作芸術作品を、小中学生を含む一般公募により展示。(約150点)"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-10-29T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-04T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://yan.yafjp.org/event/event_33854"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "陶芸祭"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市中区本牧三之谷59-3"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "利用者発表の「作陶展」「穴窯焼成作品」。手びねり、電動ロクロ、楽焼の体験教室もあります。陶芸市の他、バザー、お抹茶のおもてなし、及び本牧市民公園秋祭りも同時開催されます。現在出展者と教室受講者を募集中です。〈出展者募集〉会場にお問い合わせください。〈手びねり体験教室〉幼児、小学生(保護者同伴の上)～成人対象。10名定員。先着順。〈ロクロ体験教室〉小学生高学年以上対象。8名定員。先着順。〈申込方法〉電話・来館・往復はがき・FAXにより受付。講座名、希望時間、住所、氏名、電話、FAXを連絡してください。"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-01T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-04T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://yan.yafjp.org/event/event_33601"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "クラヴィアアーベント"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市西区みなとみらい2-3-6"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "〈曲〉ラヴェル：クープランの墓、ベートーヴェン：ソナタOp.111"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-04T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-04T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://yan.yafjp.org/event/event_33789"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "第29回泉区民文化祭写真・手芸・絵画展"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市泉区和泉町3511-9"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "＜写真・手芸＞グループ・個人による展示。手編みの作品、ニットの会の棒針・カギ針の作品。＜絵画＞泉区文化振興委員会参加団体及び一般公募の作品展。"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-01T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-04T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://yan.yafjp.org/event/event_33908"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "Salviahall Quartet Series Season 16 澤クァルテット"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市鶴見区鶴見中央1-31-2"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "創立25周年記念、不動のメンバーでいま円熟のクァルテット"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-04T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-04T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://yan.yafjp.org/event/event_33990"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "第163回　横浜にぎわい座有名会④"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市中区野毛町3-110-1"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": ""
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-04T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-04T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://ycag.yafjp.org/event/29335"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "パレットクラブ"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市磯子区磯子3-5-1 磯子区総合庁舎内"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "絵画・工作"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-10-30T00:00:00Z"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-04T00:00:00Z"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://yan.yafjp.org/event/event_33602"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "古賀淳子ピアノリサイタル　～ソロ＆室内楽版ピアノコンチェルトの夕べ～"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市西区みなとみらい2-3-6"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "〈曲〉ベートーヴェン：ピアノ・ソナタOp.57「熱情」、ショパン：ピアノコンチェルト第2番(室内楽版)"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-05T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-05T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://yan.yafjp.org/event/event_33603"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "神奈川県合唱連盟 第21回ヴィサン《人生百歳》ジョイント・コーラスフェスティバル"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市西区みなとみらい2-3-6"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": ""
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-05T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-05T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://yan.yafjp.org/event/event_33417"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "〈保土ケ谷区民文化祭〉高齢者作品展"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市保土ケ谷区岩間町1-7-15"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "区内在住の60歳以上の方による、絵画・書・手芸等の作品展示"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-01T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-05T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://yan.yafjp.org/event/event_33909"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "Mood of Autumn"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市鶴見区鶴見中央1-31-2"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "チェロ・ピアノ・ソプラノによるトリオ・コンサート"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-05T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-05T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://yan.yafjp.org/event/event_33469"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "おとなの工作教室「コトコトおりるきつつきとトコトコのぼるてんとう虫」"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市磯子区洋光台5-2-1"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "はまぎん こども宇宙科学館ボランティアによる、大人のための工作教室を開催します。小さなコイルに付けたきつつきが振動しながら棒をおりる工作と、2本の糸を交互に引くことで壁を登るてんとう虫を作ります。簡単な工作ながらユニークな動きが見られる仕組みを中心に、摩擦などについて考えます。昆虫の体のつくりの特徴を知り、作品のバリエーションもお楽しみいただけます。工作の手順や材料の入手方法、日常生活との関連など、製作を通して情報も紹介します。また、当日製作するキットの他に、同じ種類の自宅用キットをお渡しします。科学館で原理や作り方を学び、ご自宅でお子さん・お孫さんと一緒に楽しみませんか？※事前申込制〈定員〉10名　〈対象〉大人(高校生以上、お子さま連れはご遠慮ください)HPの「お申込みフォーム」か往復はがき（はまぎん こども宇宙科学館「おとなの工作教室」係 宛）にて事前申込み。何名様でも同時申込可。9/12(土)～10/9(金)必着〈申込宛先〉〒235-0045　神奈川県横浜市磯子区洋光台5-2-1はまぎん こども宇宙科学館「おとなの工作教室」係 宛"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-05T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-05T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://yan.yafjp.org/event/event_33991"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "第163回　横浜にぎわい座有名会⑤"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市中区野毛町3-110-1"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": ""
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-05T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-05T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://yan.yafjp.org/event/event_33992"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "白酒ばなし"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市中区野毛町3-110-1"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": ""
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-05T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-05T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://yan.yafjp.org/event/event_33985"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "第34回横浜市招待国際ピアノ演奏会　関連イベント　夢はピアニスト！～子どもたちとの交流会"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市西区みなとみらい2-3-6"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "「将来は世界で活躍するピアニストになりたい！」そんなたくさんの子どもたちが将来のスーパースターの卵です。現在ピアニストとして世界で活躍している若き4名の出演者の演奏を間近で聴くことができます。海外の出演者と交流することで子どもたちの国際的な感性も養います。大きな夢をかなえる第1歩として、ぜひみなさんでご参加ください。※当日は通訳がつきます。〈対象〉小学生～中学生　※未就学の方のご入場はご遠慮ください。〈申込方法〉ご希望の方は事前に下記「お問い合わせ」先へお電話にてお申込みください。 ※定員になり次第締切とさせていただきます。"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-06T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-06T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://yan.yafjp.org/event/event_33187"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "BankART school 2015 〈叛アメリカ〉の知的戦士たち"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市中区海岸通3-9"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "〈開催日〉9/4,11,25,10/2,9,23,30,11/6(計8回金曜日)〈内容〉”アメリカ”なるイデオロギーへの叛乱の思想と実践を150年に渡ってたどるこの講座は、とりもなおさず、アメリカ国家への隷属的な一心同体を決め込む現在の”日本”国家に対しても、本質的な異議申し立てを提起するものとなるだろう。〈申込方法〉受講したい講座名、名前、住所、電話番号、メールアドレスをメール、FAX、電話のいずれかにてお知らせください。先着順。"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-09-04T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-06T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://yan.yafjp.org/event/event_33959"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "新垣勉 歌手生活35周年記念 Birthday Concert"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市港南区上大岡西1-6-1"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "〈内容〉声楽コンサート〈曲目〉さとうきび畑、アメイジング・グレイス、他"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-06T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-06T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://yan.yafjp.org/event/event_33993"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "第163回　横浜にぎわい座有名会⑥"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市中区野毛町3-110-1"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": ""
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-06T00:00:00+09:00"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-06T00:00:00+09:00"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://ycag.yafjp.org/event/30057"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "冬が来るまえに　あたたかな木版画展"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市中区元町1-77-4 元町公園内"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "木版画"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-01T00:00:00Z"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-06T00:00:00Z"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://ycag.yafjp.org/event/30009"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "のもとひろこ企画展"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市中区山下町146-2-10"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "癒されるようなイラストとアクセサリーの展覧会"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-10-31T00:00:00Z"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-06T00:00:00Z"
+				}
+			},
+			{
+				"s": {
+					"type": "uri",
+					"value": "http://ycag.yafjp.org/event/30021"
+				},
+				"label": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "Y１３Bクラス展"
+				},
+				"address": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "横浜市中区山下町82徳永ビル206"
+				},
+				"description": {
+					"type": "literal",
+					"xml:lang": "ja",
+					"value": "PHaT PHOTO 横浜写真教室の生徒さんによるクラス展。これまでの授業の成果を発表します。"
+				},
+				"start": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-10-31T00:00:00Z"
+				},
+				"end": {
+					"type": "typed-literal",
+					"datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+					"value": "2015-11-06T00:00:00Z"
+				}
+			}
+		]
+	}
+}
