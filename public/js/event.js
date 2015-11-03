@@ -49,25 +49,58 @@ var cutDown = function(description,limitNum){
   }
 };
 
-//ドロップダウンで月を指定
-$("select[name=month]").change(function(){
-  //alert($("select[name=month]").val());
-  var month = $("select[name=month]").val();
-  //イベント再表示
-  //表示をリセット
-  $(".eventItem").remove();
-  getEvents(month);
-});
+//年月選択ドロップダウン作成
+var makeDropdown = function(){
+  //今日の年月を取得
+  var thisYear = new Date().getFullYear();
+  var thisMonth = new Date().getMonth() + 1;
+
+  //次月と前月を確定
+  if(thisMonth == 12){
+    var previousYM = [thisYear, 11];
+    var nextYM = [thisYear + 1, 1];
+  }else if(thisMonth == 1){
+    var previousYM = [thisYear - 1, 12];
+    var nextYM = [thisYear, 2];
+  }else {
+    var previousYM = [thisYear, thisMonth - 1];
+    var nextYM = [thisYear, thisMonth + 1];
+  }
+
+  //フォームを作成
+  $("#queryForm").append(
+    "表示対象を指定：" +
+    "<select name='month'>" +
+      "<option value='" + nextYM.join('/') + "'>" + nextYM[1] + "月</option>" +
+      "<option value='" + thisYear + '/' + thisMonth + "' selected='1'>" + thisMonth + "月</option>" +
+      "<option value='" + previousYM.join('/') + "'>" + previousYM[1] + "月</option>" +
+    "</select>"
+  );
+
+  //イベントを作成（ドロップダウンで年月を指定）
+  $("select[name=month]").change(function(){
+    var month = $("select[name=month]").val();
+    //イベント再表示
+    //表示をリセット
+    $(".eventItem").remove();
+    getEvents(month);
+  });
+};
 
 //イベント一覧データ取得
 var getEvents = function(month){
 
-  //当該月の最終日を取得（年をまたぐケースは未対応）
-  var dt = new Date();
-  var lastDay = new Date(dt.getFullYear(), month, 0).getDate();
-  var thisYear = new Date(dt.getFullYear(), month, 0).getFullYear();
+  //指定の年月から最終日を取得
+  if (month){
+    var ym = month.split("/");
+    var thisYear = ym[0];
+    var thisMonth = ym[1];
+  }else{
+    var thisYear = new Date().getFullYear();
+    var thisMonth = new Date().getMonth() + 1;
+  };
 
-  console.log(thisYear);
+  var lastDay = new Date(thisYear, thisMonth, 0).getDate();
 
   //SPARQLクエリ
   var query = [
@@ -84,7 +117,7 @@ var getEvents = function(month){
     "schema:description ?description ;",
     "cal:dtstart ?start ;",
     "cal:dtend ?end .",
-    "FILTER ((?end > '" + thisYear + "-" + month + "-01T00:00:00'^^xsd:dateTime) and (?end < '" + thisYear + "-" + month + "-" + lastDay + "T00:00:00'^^xsd:dateTime))",
+    "FILTER ((?end > '" + thisYear + "-" + thisMonth + "-01T00:00:00'^^xsd:dateTime) and (?end < '" + thisYear + "-" + thisMonth + "-" + lastDay + "T00:00:00'^^xsd:dateTime))",
     "FILTER (lang(?location) ='ja' )",
     "FILTER (regex(xsd:string(?s), 'http://yan.yafjp.org/'))",
     "}",
@@ -94,7 +127,7 @@ var getEvents = function(month){
   ].join("");
 
   //サブタイトル書き換え
-  $("#subTitle").html("<h2>" + month + "月のイベント</h2>");
+  $("#subTitle").html("<h2>" + thisMonth + "月のイベント</h2>");
 
   //GETリクエスト（一覧データを取得）
   $.get(endpoint,
