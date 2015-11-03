@@ -17,6 +17,7 @@ var eventTable = function(data){
   $.each(data.results.bindings, function(i, val) {
     var startDate = new Date(val.start.value).toLocaleDateString();//日付フォーマット変更
     var endDate = new Date(val.end.value).toLocaleDateString();//日付フォーマット変更
+    var eventID = val.s.value.split("_")[1];//イベントID取得
     $("#eventTable").append(
       "<div class='col-md-4 eventItem'>" +
       "<img class='thumbnail' src='" + val.image.value + "' height='200px' />" +
@@ -29,7 +30,7 @@ var eventTable = function(data){
       "<dt><span class='label label-success'>終了日時</span></dt><dd>" + endDate + "</dd>" +
       "<dt><span class='label label-primary'>開催場所</span></dt><dd>" + val.location.value + "</dd>" +
       "</dl>" +
-      "<p><a class='btn btn-default' href=" + val.s.value + " role='button'>View details »</a></p>" +
+      "<p><a class='btn btn-default' href=detail.html?id=" + eventID + " role='button'>View details »</a></p>" +
       "</div>"
     );
   });
@@ -61,6 +62,13 @@ $("select[name=month]").change(function(){
 //イベント一覧データ取得
 var getEvents = function(month){
 
+  //当該月の最終日を取得（年をまたぐケースは未対応）
+  var dt = new Date();
+  var lastDay = new Date(dt.getFullYear(), month, 0).getDate();
+  var thisYear = new Date(dt.getFullYear(), month, 0).getFullYear();
+
+  console.log(thisYear);
+
   //SPARQLクエリ
   var query = [
     "PREFIX yav: <http://yafjp.org/terms/yav/1.0#>",
@@ -76,12 +84,13 @@ var getEvents = function(month){
     "schema:description ?description ;",
     "cal:dtstart ?start ;",
     "cal:dtend ?end .",
-    "FILTER ((?end > '2015-" + month + "-01T00:00:00'^^xsd:dateTime) and (?end < '2015-" + month + "-07T00:00:00'^^xsd:dateTime))",
+    "FILTER ((?end > '" + thisYear + "-" + month + "-01T00:00:00'^^xsd:dateTime) and (?end < '" + thisYear + "-" + month + "-" + lastDay + "T00:00:00'^^xsd:dateTime))",
     "FILTER (lang(?location) ='ja' )",
+    "FILTER (regex(xsd:string(?s), 'http://yan.yafjp.org/'))",
     "}",
     "ORDER by ASC(?end)",
     "OFFSET 0",
-    "LIMIT 100"
+    "LIMIT 500"
   ].join("");
 
   //サブタイトル書き換え
@@ -95,47 +104,70 @@ var getEvents = function(month){
   },
   function(data){
     //data = JSON.parse(data);//本番では不要かも
-    console.log(data);
+    //console.log(data);
     eventTable(data);
   });
 };
 
 //詳細データ取得
 var getDetail = function(){
+  var eventID = location.href.split('?id=')[1];
+  var uri = "http://yan.yafjp.org/event/event_" + eventID ;
   //GETリクエスト
-  $.get("./js/sampledata.json",
+  $.get(uri + '.json',
   function(data){
-    data = JSON.parse(data);//本番では不要かも
+    //data = JSON.parse(data);//本番では不要かも
     detailView(data);
   });
 }
 
+//属性があるかないか調べたうえで出力
+var checkValue = function(hash, property) {
+  //console.log(hash);
+  if(property in hash){
+    return hash[property][0].value;
+  }else{
+    return "";
+  };
+};
+
 //イベントデータを展開（詳細画面用）
 var detailView = function(data){
-  console.log(data['http://yan.yafjp.org/event/event_34095']['http://www.w3.org/2000/01/rdf-schema#label'][0].value);
-  var startDate = new Date(data['http://yan.yafjp.org/event/event_34095']['http://www.w3.org/2002/12/cal/icaltzd#dtstart'][0].value).toLocaleDateString();
-  var endDate = new Date(data['http://yan.yafjp.org/event/event_34095']['http://www.w3.org/2002/12/cal/icaltzd#dtend'][0].value).toLocaleDateString();
+  var eventID = location.href.split('?id=')[1];
+  var uri = "http://yan.yafjp.org/event/event_" + eventID ;
+  //console.log(uri);
+  //console.log(data[uri]);
+
+  var startDate = new Date(data[uri]['http://www.w3.org/2002/12/cal/icaltzd#dtstart'][0].value).toLocaleDateString();
+  var endDate = new Date(data[uri]['http://www.w3.org/2002/12/cal/icaltzd#dtend'][0].value).toLocaleDateString();
+
+  if(startDate == endDate) {
+    date = startDate;
+  }else{
+    date = startDate + "〜" + endDate;
+  };
+
   $("#eventTable").append(
-    "<h2 class='blog-post-title'>" + data['http://yan.yafjp.org/event/event_34095']['http://www.w3.org/2000/01/rdf-schema#label'][0].value + "</h2>" +
-    "<p class='blog-post-meta'>" + startDate + " 〜 " + endDate + "</p>" +
-    "<p>" + data['http://yan.yafjp.org/event/event_34095']['http://schema.org/description'][0].value + "</p>" +
+    "<h2 class='blog-post-title'>" + data[uri]['http://www.w3.org/2000/01/rdf-schema#label'][0].value + "</h2>" +
+    "<p>" + data[uri]['http://schema.org/description'][0].value + "</p>" +
     "<dl>" +
-    "<dt>日時</dt><dd>" + startDate + " 〜 " + endDate + "<br>" + data['http://yan.yafjp.org/event/event_34095']['http://purl.org/jrrk#scheduleNote'][0].value + "</dd>" +
+    "<dt>日時</dt><dd>" + date + "<br>" + checkValue(data[uri],'http://purl.org/jrrk#scheduleNote') + "</dd>" +
     "</dl>" +
     "<dl>" +
-    "<dt>会場</dt><dd><a href='" + data['http://yan.yafjp.org/event/event_34095']['http://schema.org/location'][0].value + "'>" + data['http://yan.yafjp.org/event/event_34095']['http://purl.org/jrrk#location'][0].value + "</a></dd>" +
+    "<dt>会場</dt><dd><a href='" + data[uri]['http://schema.org/location'][0].value + "'>" + data[uri]['http://purl.org/jrrk#location'][0].value + "</a></dd>" +
     "</dl>" +
     "<dl>" +
-    "<dt>料金</dt><dd>" + data['http://yan.yafjp.org/event/event_34095']['http://schema.org/price'][0].value + "</dd>" +
+    "<dt>料金</dt><dd>" + checkValue(data[uri],'http://schema.org/price') + "</dd>" +
     "</dl>" +
     "<dl>" +
-    "<dt>ウェブサイト</dt><dd><a href='" + data['http://yan.yafjp.org/event/event_34095']['http://schema.org/url'][0].value + "'>" + data['http://yan.yafjp.org/event/event_34095']['http://schema.org/url'][0].value + "</a></dd>" +
+    "<dt>ウェブサイト</dt><dd><a href='" + checkValue(data[uri],'http://schema.org/url') + "'>" + checkValue(data[uri],'http://schema.org/url') + "</a></dd>" +
     "</dl>" +
     "<dl>" +
-    "<dt>問い合わせ先</dt><dd>" + data['_:genid1']['http://www.w3.org/2000/01/rdf-schema#label'][0].value + "<br>" +
-    "（住所：" + data['_:genid1']['http://purl.org/jrrk#address'][0].value + " / " +
-    "電話番号：" + data['_:genid1']['http://schema.org/telephone'][0].value + "）</dd>"
-  );
-  $("#eventImage").append("<img src =" + data['http://yan.yafjp.org/event/event_34095']['http://schema.org/image'][0].value + " />");
-  document.title = data['http://yan.yafjp.org/event/event_34095']['http://www.w3.org/2000/01/rdf-schema#label'][0].value + " | YOKOHAMA art LOD" ;
+    "<dt>問い合わせ先</dt><dd>" + data[data[uri]['http://schema.org/contactPoint'][0].value]['http://www.w3.org/2000/01/rdf-schema#label'][0].value + "<br>" +
+    "（住所：" + checkValue(data[data[uri]['http://schema.org/contactPoint'][0].value],'http://purl.org/jrrk#address') + " / " +
+    "電話：" + checkValue(data[data[uri]['http://schema.org/contactPoint'][0].value],'http://schema.org/telephone') + "）</dd>"
+);
+  $("#eventImage").append("<img src =" + data[uri]['http://schema.org/image'][0].value + " />");
+  document.title = data[uri]['http://www.w3.org/2000/01/rdf-schema#label'][0].value + " | YOKOHAMA art LOD" ;
+
 };
