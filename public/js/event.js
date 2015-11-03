@@ -2,7 +2,7 @@
 
 //ヨコハマ・アート・LODを使ってイベント情報サイトを作ってみよう
 //Code for YOKOHAMA ハンズオン
-//Iwao KOBAYASHI
+//by Iwao KOBAYASHI
 //2015年11月5日
 
 */
@@ -17,7 +17,7 @@ var eventTable = function(data){
   $.each(data.results.bindings, function(i, val) {
     var startDate = new Date(val.start.value).toLocaleDateString();//日付フォーマット変更
     var endDate = new Date(val.end.value).toLocaleDateString();//日付フォーマット変更
-    var eventID = val.s.value.split("_")[1];//イベントID取得
+
     $("#eventTable").append(
       "<div class='col-md-4 eventItem'>" +
       "<img class='thumbnail' src='" + val.image.value + "' height='200px' />" +
@@ -30,7 +30,7 @@ var eventTable = function(data){
       "<dt><span class='label label-success'>終了日時</span></dt><dd>" + endDate + "</dd>" +
       "<dt><span class='label label-primary'>開催場所</span></dt><dd>" + val.location.value + "</dd>" +
       "</dl>" +
-      "<p><a class='btn btn-default' href=detail.html?id=" + eventID + " role='button'>View details »</a></p>" +
+      "<p><a class='btn btn-default' href=detail.html?uri=" + encodeURI(val.s.value) + " role='button'>View details »</a></p>" +
       "</div>"
     );
   });
@@ -54,17 +54,19 @@ var makeDropdown = function(){
   //今日の年月を取得
   var thisYear = new Date().getFullYear();
   var thisMonth = new Date().getMonth() + 1;
+  var previousYM = new Array();
+  var nextYM = new Array();
 
   //次月と前月を確定
   if(thisMonth == 12){
-    var previousYM = [thisYear, 11];
-    var nextYM = [thisYear + 1, 1];
+    previousYM = [thisYear, 11];
+    nextYM = [thisYear + 1, 1];
   }else if(thisMonth == 1){
-    var previousYM = [thisYear - 1, 12];
-    var nextYM = [thisYear, 2];
+    previousYM = [thisYear - 1, 12];
+    nextYM = [thisYear, 2];
   }else {
-    var previousYM = [thisYear, thisMonth - 1];
-    var nextYM = [thisYear, thisMonth + 1];
+    previousYM = [thisYear, thisMonth - 1];
+    nextYM = [thisYear, thisMonth + 1];
   }
 
   //フォームを作成
@@ -136,26 +138,25 @@ var getEvents = function(month){
     format: "json",
   },
   function(data){
-    //data = JSON.parse(data);//本番では不要かも
-    //console.log(data);
     eventTable(data);
   });
 };
 
 //詳細データ取得
 var getDetail = function(){
-  var eventID = location.href.split('?id=')[1];
-  var uri = "http://yan.yafjp.org/event/event_" + eventID ;
+
+  var uri = decodeURI(location.href.split('?uri=')[1]);
+
   //GETリクエスト
   $.get(uri + '.json',
   function(data){
     //data = JSON.parse(data);//本番では不要かも
-    detailView(data);
+    detailView(uri, data);
   });
 }
 
 //属性があるかないか調べたうえで出力
-var checkValue = function(hash, property) {
+var checkProperty = function(hash, property) {
   //console.log(hash);
   if(property in hash){
     return hash[property][0].value;
@@ -165,11 +166,7 @@ var checkValue = function(hash, property) {
 };
 
 //イベントデータを展開（詳細画面用）
-var detailView = function(data){
-  var eventID = location.href.split('?id=')[1];
-  var uri = "http://yan.yafjp.org/event/event_" + eventID ;
-  //console.log(uri);
-  //console.log(data[uri]);
+var detailView = function(uri, data){
 
   var startDate = new Date(data[uri]['http://www.w3.org/2002/12/cal/icaltzd#dtstart'][0].value).toLocaleDateString();
   var endDate = new Date(data[uri]['http://www.w3.org/2002/12/cal/icaltzd#dtend'][0].value).toLocaleDateString();
@@ -184,21 +181,21 @@ var detailView = function(data){
     "<h2 class='blog-post-title'>" + data[uri]['http://www.w3.org/2000/01/rdf-schema#label'][0].value + "</h2>" +
     "<p>" + data[uri]['http://schema.org/description'][0].value + "</p>" +
     "<dl>" +
-    "<dt>日時</dt><dd>" + date + "<br>" + checkValue(data[uri],'http://purl.org/jrrk#scheduleNote') + "</dd>" +
+    "<dt>日時</dt><dd>" + date + "<br>" + checkProperty(data[uri],'http://purl.org/jrrk#scheduleNote') + "</dd>" +
     "</dl>" +
     "<dl>" +
     "<dt>会場</dt><dd><a href='" + data[uri]['http://schema.org/location'][0].value + "'>" + data[uri]['http://purl.org/jrrk#location'][0].value + "</a></dd>" +
     "</dl>" +
     "<dl>" +
-    "<dt>料金</dt><dd>" + checkValue(data[uri],'http://schema.org/price') + "</dd>" +
+    "<dt>料金</dt><dd>" + checkProperty(data[uri],'http://schema.org/price') + "</dd>" +
     "</dl>" +
     "<dl>" +
-    "<dt>ウェブサイト</dt><dd><a href='" + checkValue(data[uri],'http://schema.org/url') + "'>" + checkValue(data[uri],'http://schema.org/url') + "</a></dd>" +
+    "<dt>ウェブサイト</dt><dd><a href='" + checkProperty(data[uri],'http://schema.org/url') + "'>" + checkProperty(data[uri],'http://schema.org/url') + "</a></dd>" +
     "</dl>" +
     "<dl>" +
     "<dt>問い合わせ先</dt><dd>" + data[data[uri]['http://schema.org/contactPoint'][0].value]['http://www.w3.org/2000/01/rdf-schema#label'][0].value + "<br>" +
-    "（住所：" + checkValue(data[data[uri]['http://schema.org/contactPoint'][0].value],'http://purl.org/jrrk#address') + " / " +
-    "電話：" + checkValue(data[data[uri]['http://schema.org/contactPoint'][0].value],'http://schema.org/telephone') + "）</dd>"
+    "（住所：" + checkProperty(data[data[uri]['http://schema.org/contactPoint'][0].value],'http://purl.org/jrrk#address') + " / " +
+    "電話：" + checkProperty(data[data[uri]['http://schema.org/contactPoint'][0].value],'http://schema.org/telephone') + "）</dd>"
 );
   $("#eventImage").append("<img src =" + data[uri]['http://schema.org/image'][0].value + " />");
   document.title = data[uri]['http://www.w3.org/2000/01/rdf-schema#label'][0].value + " | YOKOHAMA art LOD" ;
