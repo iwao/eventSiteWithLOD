@@ -8,13 +8,15 @@
 */
 
 //SPARQLエンドポイント設定
-var endpoint = "http://localhost:4567/sparql";
+//var endpoint = "http://localhost:4567/sparql";
+var endpoint = "http://data.yafjp.org/sparql";
 
-//イベントデータを展開
+
+//イベントデータを展開（一覧画面用）
 var eventTable = function(data){
   $.each(data.results.bindings, function(i, val) {
-    var startDate = new Date(val.start.value).toLocaleDateString();
-    var endDate = new Date(val.end.value).toLocaleDateString();
+    var startDate = new Date(val.start.value).toLocaleDateString();//日付フォーマット変更
+    var endDate = new Date(val.end.value).toLocaleDateString();//日付フォーマット変更
     $("#eventTable").append(
       "<div class='col-md-4 eventItem'>" +
       "<img class='thumbnail' src='" + val.image.value + "' height='200px' />" +
@@ -56,7 +58,7 @@ $("select[name=month]").change(function(){
   getEvents(month);
 });
 
-//イベントデータ取得
+//イベント一覧データ取得
 var getEvents = function(month){
 
   //SPARQLクエリ
@@ -85,17 +87,55 @@ var getEvents = function(month){
   //サブタイトル書き換え
   $("#subTitle").html("<h2>" + month + "月のイベント</h2>");
 
-  //GETリクエスト
+  //GETリクエスト（一覧データを取得）
   $.get(endpoint,
   {
     query: query,
     format: "json",
   },
   function(data){
-    data = JSON.parse(data);//本番では不要かも
+    //data = JSON.parse(data);//本番では不要かも
     console.log(data);
     eventTable(data);
   });
 };
 
-getEvents(11);
+//詳細データ取得
+var getDetail = function(){
+  //GETリクエスト
+  $.get("./js/sampledata.json",
+  function(data){
+    data = JSON.parse(data);//本番では不要かも
+    detailView(data);
+  });
+}
+
+//イベントデータを展開（詳細画面用）
+var detailView = function(data){
+  console.log(data['http://yan.yafjp.org/event/event_34095']['http://www.w3.org/2000/01/rdf-schema#label'][0].value);
+  var startDate = new Date(data['http://yan.yafjp.org/event/event_34095']['http://www.w3.org/2002/12/cal/icaltzd#dtstart'][0].value).toLocaleDateString();
+  var endDate = new Date(data['http://yan.yafjp.org/event/event_34095']['http://www.w3.org/2002/12/cal/icaltzd#dtend'][0].value).toLocaleDateString();
+  $("#eventTable").append(
+    "<h2 class='blog-post-title'>" + data['http://yan.yafjp.org/event/event_34095']['http://www.w3.org/2000/01/rdf-schema#label'][0].value + "</h2>" +
+    "<p class='blog-post-meta'>" + startDate + " 〜 " + endDate + "</p>" +
+    "<p>" + data['http://yan.yafjp.org/event/event_34095']['http://schema.org/description'][0].value + "</p>" +
+    "<dl>" +
+    "<dt>日時</dt><dd>" + startDate + " 〜 " + endDate + "<br>" + data['http://yan.yafjp.org/event/event_34095']['http://purl.org/jrrk#scheduleNote'][0].value + "</dd>" +
+    "</dl>" +
+    "<dl>" +
+    "<dt>会場</dt><dd><a href='" + data['http://yan.yafjp.org/event/event_34095']['http://schema.org/location'][0].value + "'>" + data['http://yan.yafjp.org/event/event_34095']['http://purl.org/jrrk#location'][0].value + "</a></dd>" +
+    "</dl>" +
+    "<dl>" +
+    "<dt>料金</dt><dd>" + data['http://yan.yafjp.org/event/event_34095']['http://schema.org/price'][0].value + "</dd>" +
+    "</dl>" +
+    "<dl>" +
+    "<dt>ウェブサイト</dt><dd><a href='" + data['http://yan.yafjp.org/event/event_34095']['http://schema.org/url'][0].value + "'>" + data['http://yan.yafjp.org/event/event_34095']['http://schema.org/url'][0].value + "</a></dd>" +
+    "</dl>" +
+    "<dl>" +
+    "<dt>問い合わせ先</dt><dd>" + data['_:genid1']['http://www.w3.org/2000/01/rdf-schema#label'][0].value + "<br>" +
+    "（住所：" + data['_:genid1']['http://purl.org/jrrk#address'][0].value + " / " +
+    "電話番号：" + data['_:genid1']['http://schema.org/telephone'][0].value + "）</dd>"
+  );
+  $("#eventImage").append("<img src =" + data['http://yan.yafjp.org/event/event_34095']['http://schema.org/image'][0].value + " />");
+  document.title = data['http://yan.yafjp.org/event/event_34095']['http://www.w3.org/2000/01/rdf-schema#label'][0].value + " | YOKOHAMA art LOD" ;
+};

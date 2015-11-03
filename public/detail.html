@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>イベント情報検索</title>
+    <title>イベント詳細情報 | YOKOHAMA ART LOD</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -30,51 +30,51 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">YOKOHAMA ART LOD</a>
+          <a class="navbar-brand" href="./index.html">YOKOHAMA ART LOD</a>
         </div>
       </div>
     </nav>
 
-    <div class="jumbotron">
-      <div class="container">
-        <h1>YOKOHAMA ART LOD</h1>
-        <p>横浜の芸術文化関連イベントを表示します.</p>
-        <p><a class="btn btn-primary btn-lg" href="http://yan.yafjp.org/lod" role="button">Learn more »</a></p>
+    <div class="container" id="eventDetail">
+
+        <div class="row">
+
+          <div class="col-sm-8 blog-main">
+
+            <div class="blog-post" id="eventTable">
+            </div><!-- /.blog-post -->
+
+          </div><!-- /.blog-main -->
+
+          <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+            <div class="sidebar-module sidebar-module-inset">
+              <div id="eventImage"></div>
+            </div>
+          </div><!-- /.blog-sidebar -->
+
+        </div><!-- /.row -->
+
+        <nav>
+          <ul class="pager">
+            <li><a href="#">Previous</a></li>
+            <li><a href="index.html">一覧に戻る</a></li>
+            <li><a href="#">Next</a></li>
+          </ul>
+        </nav>
+
+        <hr>
+
+        <footer>
+          <p>ヨコハマ・アート・LOD by 公益財団法人横浜市芸術文化振興財団</p>
+        </footer>
+
       </div>
-    </div>
-
-    <div id="operationBar" class="container">
-      <form id="queryForm">
-        表示対象を指定：
-        <select name="month">
-          <option value="12">12月</option>
-          <option value="11" selected="1">11月</option>
-          <option value="10">10月</option>
-        </select>
-      </form>
-    </div>
-
-    <div id="subTitle" class="container">
-      <h2>11月のイベント</h2>
-    </div>
-
-    <div class="container">
-      <!-- Example row of columns -->
-      <div id="eventTable" class="row">
-      </div>
-
-      <hr>
-
-      <footer>
-        <p>ヨコハマ・アート・LOD by 公益財団法人横浜市芸術文化振興財団</p>
-      </footer>
-    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="./js/event.js"></script>
     <script>
-      getEvents(11);
+      getDetail();
     </script>
   </body>
 </html>
