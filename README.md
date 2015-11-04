@@ -594,7 +594,10 @@ SPARQLは使わず、個々のイベントページのURIからメタデータ�
       getDetail();
     </script>
 
-`console.log()`を使って、取得できたデータの内容を確認します。  
+`console.log()`を使って、取得できたデータの内容を確認します。
+
+> event.js
+
 一時的に`detailView()`をコメントアウトしておきます。
 
     $.get(uri + '.json',
