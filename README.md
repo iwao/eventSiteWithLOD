@@ -17,8 +17,10 @@
 
 ### 環境の準備
 * javascriptが動作すれば大丈夫です。（ブラウザは最新のものを用意してください）
-* ローカル環境で動作するhttpサーバー（Macの場合は、MMAPをインストールするとか、最初から入っているApatchを起動するとか）
 * このリポジトリからローカル環境へファイルをダウンロード
+* `./public`に完成版ファイルが一式入っています。
+* ステップバイステップで作業したい方は`template`内のファイルを操作するのが良いと思います。
+* `myapp.rb`はCORS制限のあるSPARQLエンドポイントをバイパスするための簡易的な処理を書いてあります。（今回は不要）
 * `index.html`内の`./CSS/style.css`および、`./js/event.js`それぞれのパスを確認して、必要に応じて変更します。
 * `index.html`を開いてエラーが出ないことを確認
 
@@ -110,7 +112,7 @@ javascriptからSPARQLを投げてデータを取得します。
 SPARQLエンドポイントのパスを指定
 
     //SPARQLエンドポイント設定
-    var endpoint = "http://localhost:4567/sparql";
+    var endpoint = "http://data.yafjp.org/sparql";
 
 イベントデータを取得する関数`getEvents()`を作成
 
