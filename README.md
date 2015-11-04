@@ -296,7 +296,7 @@ GETリクエストの部分から呼び出すように追記します。
           "<dt>開始日時</dt><dd>" + val.start.value + "</dd>" +
           "<dt>終了日時</dt><dd>" + val.end.value + "</dd>" +
           "<dt>開催場所</dt><dd>" + val.location.value + "</dd>" +
-          "</dl>"
+          "</dl>" +
           "</div>"
         );
       });
