@@ -12,6 +12,8 @@
 7. 必要な属性を取り出してみよう
 8. ドロップダウンを設置して月を切り替えできるようにしてみる
 9. 見た目を調整してみよう（文字数制限したり、画像サイズ調整したり、センタリングしたり）
+10. 年月を動的に取得
+11. 個別ページの作成
 
 ### 環境の準備
 * javascriptが動作すれば大丈夫です。（ブラウザは最新のものを用意してください）
@@ -558,13 +560,14 @@ SPARQLは使わず、個々のイベントページのURIからメタデータ�
 
 ### 個別のイベント情報の取得
 
-ヨコハマ・アート・LODのリソースは基本的にURIから簡単にメタデータを取得することが可能です。  
-通常、個々のリソースのURIにブラウザからアクセスした場合は、HTMLが返却されますが、XMLやJSON形式のメタデータをリクエストすることができます。
+ヨコハマ・アート・LODのリソースは基本的にURIから簡単にメタデータのみを取得することが可能です。  
+一般的に、個々のリソースのURIにブラウザからアクセスした場合は、HTMLが返却されますが、LODのリソースではTurtleやN3をはじめ、JSONやXML等の形式で記述されたメタデータをリクエストすることができます。
 これをコンテントネゴシエーションといいます。  
-今回は簡易的に個々のURIに接尾辞`.json`を追加してJSONをgetします。
+本来は、getリクエストのAcceptヘッダの値で物理形式を指定してリクエストすることもできますが、今回は簡易的に個々のURIに接尾辞`.json`を追加してJSONをgetします。  
+くわしくは、[ヨコハマ・アート・LOD](http://data.yafjp.org/reference.html)のドキュメントを参照してください。  
 
 詳細ページのURIを`./detail.html?uri=<リソースのURI>`とします。  
-パラメータからリクエスト先のURIを取得して、接尾辞を追加したうえでgetでデータをリクエストします。  
+パラメータからリクエスト先のURIを取得して、接尾辞を追加したうえでgetでデータを取得します。  
 
 > event.js
 
@@ -591,12 +594,22 @@ SPARQLは使わず、個々のイベントページのURIからメタデータ�
       getDetail();
     </script>
 
-取得できたデータの内容を確認します。
+`console.log()`を使って、取得できたデータの内容を確認します。  
+一時的に`detailView()`をコメントアウトしておきます。
+
+    $.get(uri + '.json',
+    function(data){
+      //detailView(uri, data);
+      console.log(data);
+    });
+
+確認が済んだら元に戻します。
 
 ### 取得したデータをHTMLに展開
 
 個々の属性へのアクセスするいは次のようになります。  
-イベント名を取得する例です。
+
+例）イベント名を取得
 
     data[uri]['http://www.w3.org/2000/01/rdf-schema#label'][0].value
 
@@ -650,7 +663,7 @@ SPARQLは使わず、個々のイベントページのURIからメタデータ�
         "<dt>問い合わせ先</dt><dd>" + data[data[uri]['http://schema.org/contactPoint'][0].value]['http://www.w3.org/2000/01/rdf-schema#label'][0].value + "<br>" +
         "（住所：" + checkProperty(data[data[uri]['http://schema.org/contactPoint'][0].value],'http://purl.org/jrrk#address') + " / " +
         "電話：" + checkProperty(data[data[uri]['http://schema.org/contactPoint'][0].value],'http://schema.org/telephone') + "）</dd>"
-    );
+        );
       $("#eventImage").append("<img src =" + data[uri]['http://schema.org/image'][0].value + " />");
       document.title = data[uri]['http://www.w3.org/2000/01/rdf-schema#label'][0].value + " | YOKOHAMA art LOD" ;
     };
