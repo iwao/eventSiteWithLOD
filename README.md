@@ -130,7 +130,7 @@ SPARQLエンドポイントのパスを指定
         "schema:description ?description ;",  
         "cal:dtstart ?start ;",  
         "cal:dtend ?end .",  
-        "FILTER ((?end > '2015-11-01T00:00:00'^^xsd:dateTime) and (?end < '2015-"11-30T00:00:00'^^xsd:dateTime))",  
+        "FILTER ((?end > '2015-11-01T00:00:00'^^xsd:dateTime) and (?end < '2015-11-30T00:00:00'^^xsd:dateTime))",  
         "FILTER (lang(?location) ='ja' )",  
         "FILTER (regex(xsd:string(?s), 'http://yan.yafjp.org/'))",  
       "}",  
@@ -257,7 +257,7 @@ jsonからデータを取り出します。
     var eventTable = function(data){
       $.each(data.results.bindings, function(i, val) {
         $("#eventTable").append(
-          "<p>" + val.label.value + "</p>
+          "<p>" + val.label.value + "</p>"
         );
       });
     };
@@ -282,6 +282,7 @@ GETリクエストの部分から呼び出すように追記します。
     var eventTable = function(data){
       $.each(data.results.bindings, function(i, val) {
         $("#eventTable").append(
+          "<div class='col-md-4 eventItem'>" +
           "<img class='thumbnail' src='" + val.image.value + "' height='200px' />" +
           "<h3>" + val.label.value  + "</h3>" +
           "<div class='description'>" +
@@ -292,6 +293,7 @@ GETリクエストの部分から呼び出すように追記します。
           "<dt>終了日時</dt><dd>" + val.end.value + "</dd>" +
           "<dt>開催場所</dt><dd>" + val.location.value + "</dd>" +
           "</dl>"
+          "</div>"
         );
       });
     };
