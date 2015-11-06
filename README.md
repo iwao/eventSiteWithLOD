@@ -576,7 +576,6 @@ SPARQLは使わず、個々のイベントページのURIからメタデータ�
 > event.js
 
 `event.js`に次のように`getDetail()`を追加します。  
-取得したデータはuriと一緒に、`detailView()`に渡します。
 
     //詳細データ取得
     var getDetail = function(){
@@ -586,7 +585,7 @@ SPARQLは使わず、個々のイベントページのURIからメタデータ�
       //GETリクエスト
       $.get(uri + '.json',
       function(data){
-        detailView(uri, data);
+        console.log(data);
       });
     }
 
@@ -598,30 +597,21 @@ SPARQLは使わず、個々のイベントページのURIからメタデータ�
       getDetail();
     </script>
 
-`console.log()`を使って、取得できたデータの内容を確認します。
-
-> event.js
-
-一時的に`detailView()`をコメントアウトしておきます。
-
-    $.get(uri + '.json',
-    function(data){
-      //detailView(uri, data);
-      console.log(data);
-    });
-
-確認が済んだら元に戻します。
+データが取得できるか確認するため、`detail.html?uri=http://yan.yafjp.org/event/event_33167`にアクセス、
+ブラウザのコンソールを使って、取得できたデータの内容を確認します。
 
 ### 取得したデータをHTMLに展開
 
-個々の属性へのアクセスするいは次のようになります。  
+取得できたイベントデータの各属性へアクセスするには次のようになります。  
 
 例）イベント名を取得
 
     data[uri]['http://www.w3.org/2000/01/rdf-schema#label'][0].value
 
 基本的には同様にして各属性をHTMLに出力しますが、イベントによって指定した属性を持たない場合があります、
-そこで、属性の存在を確認してから処理する`checkProperty()`を追加してみます。
+そこで、属性の存在を確認してから処理する`checkProperty()`を追加してみます。  
+一つ目のパラメータでオブジェクトを指定して、二つ目のパラメータで属性を指定します。  
+オブジェクトのキーに指定した属性が存在するかどうかを調べます。
 
 > event.js
 
@@ -637,7 +627,8 @@ SPARQLは使わず、個々のイベントページのURIからメタデータ�
 
 > event.js
 
-`detailView()`を追加します。
+`detailView()`を追加します。  
+一つ目のパラメータは詳細ページのuri、二つ目のパラメータは取得したjsonデータです。
 
     //イベントデータを展開（詳細画面用）
     var detailView = function(uri, data){
@@ -674,6 +665,17 @@ SPARQLは使わず、個々のイベントページのURIからメタデータ�
       $("#eventImage").append("<img src =" + data[uri]['http://schema.org/image'][0].value + " />");
       document.title = data[uri]['http://www.w3.org/2000/01/rdf-schema#label'][0].value + " | YOKOHAMA art LOD" ;
     };
+
+> event.js
+
+`getDetail()`から`detailView()`を呼び出すようにします。  
+
+    $.get(uri + '.json',
+    function(data){
+      detailView(uri, data);
+      //console.log(data);
+    });
+
 
 最後に、一覧画面の各アイテムからのリンク先を`detail.html`に変更します。
 
@@ -716,7 +718,3 @@ SPARQLは使わず、個々のイベントページのURIからメタデータ�
 以下のような応用なら比較的簡単にできるのではないでしょうか。
 * 詳細な検索を可能にする
 * イベントマップを作成する
-
-### アンケートにご協力ください
-
-[第5回オープンデータ・ハンズオンアンケート](/Users/iwao/git/code4yokohama/eventSiteWithLOD/README.md)
